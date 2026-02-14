@@ -170,7 +170,7 @@ int main()
             printf("\033[33m[TOOL RESULT] %s\033[0m\n", tool_output);
 
             cJSON *tool_result = cJSON_CreateObject();
-            cJSON_AddStringToObject(tool_result, "role", "user");
+            cJSON_AddStringToObject(tool_result, "role", "tool");
             cJSON_AddStringToObject(tool_result, "content", tool_output);
             cJSON_AddItemToArray(short_memory, tool_result);
 

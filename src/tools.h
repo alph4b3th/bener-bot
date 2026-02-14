@@ -34,11 +34,11 @@ static const char *TOOLS_SYSTEM_PROMPT_TEMPLATE =
     "Quando quiser usar uma ferramenta, gere SOMENTE JSON no formato:\n"
     "{\"function\": \"nome_da_funcao\", \"parameters\": {\"param1\": valor, ...}}\n"
     "Exemplo para obter clima:\n"
-    "{\"function\": \"get_weather\", \"parameters\": {\"city\": \"Duque de Caxias\"}}\n"
+    "{\"function\": \"get_weather\", \"parameters\": {\"city\": \"São Paulo\"}}\n"
     "Observação: envie somente o json, porque o seu interpretador de ferramentas nao consegue identificar se você mandar mensagem e json juntos\n"
     "Resposta da tool:\n"
     "\tQuando a tool retornar com o resultado, será algo como:\n"
-    "{\"function\": \"get_weather\", \"result\": {\"temperatura\": \"25\", \"status\": \"Ensolarado\" }}\n";
+    "{\"function\": \"get_weather\", \"result\": {\"temperatura\": \"21\", \"status\": \"Ensolarado\" }}\n";
 
 char *build_tools_system_prompt(void);
 
