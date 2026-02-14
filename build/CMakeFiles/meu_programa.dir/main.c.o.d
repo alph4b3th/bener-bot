@@ -92,4 +92,5 @@ CMakeFiles/meu_programa.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/curl/header.h \
  /usr/include/x86_64-linux-gnu/curl/websockets.h \
  /usr/include/x86_64-linux-gnu/curl/mprintf.h \
- /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h
+ /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h \
+ /usr/include/cjson/cJSON.h

@@ -73,15 +73,15 @@ libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o: libollama/CMakeFiles/test
 libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c
 libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o: libollama/CMakeFiles/test_chat.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o -MF CMakeFiles/test_chat.dir/test/test_chat.c.o.d -o CMakeFiles/test_chat.dir/test/test_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o -MF CMakeFiles/test_chat.dir/test/test_chat.c.o.d -o CMakeFiles/test_chat.dir/test/test_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c
 
 libollama/CMakeFiles/test_chat.dir/test/test_chat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_chat.dir/test/test_chat.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c > CMakeFiles/test_chat.dir/test/test_chat.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c > CMakeFiles/test_chat.dir/test/test_chat.c.i
 
 libollama/CMakeFiles/test_chat.dir/test/test_chat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_chat.dir/test/test_chat.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c -o CMakeFiles/test_chat.dir/test/test_chat.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c -o CMakeFiles/test_chat.dir/test/test_chat.c.s
 
 # Object files for target test_chat
 test_chat_OBJECTS = \

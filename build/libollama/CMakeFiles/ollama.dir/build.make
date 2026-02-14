@@ -73,239 +73,239 @@ libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o: libollama/CMakeFiles/ollama
 libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o -MF CMakeFiles/ollama.dir/lib/ollama_blob.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_blob.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o -MF CMakeFiles/ollama.dir/lib/ollama_blob.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_blob.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_blob.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c > CMakeFiles/ollama.dir/lib/ollama_blob.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c > CMakeFiles/ollama.dir/lib/ollama_blob.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_blob.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c -o CMakeFiles/ollama.dir/lib/ollama_blob.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c -o CMakeFiles/ollama.dir/lib/ollama_blob.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o -MF CMakeFiles/ollama.dir/lib/ollama_chat.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o -MF CMakeFiles/ollama.dir/lib/ollama_chat.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_chat.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c > CMakeFiles/ollama.dir/lib/ollama_chat.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c > CMakeFiles/ollama.dir/lib/ollama_chat.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_chat.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c -o CMakeFiles/ollama.dir/lib/ollama_chat.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c -o CMakeFiles/ollama.dir/lib/ollama_chat.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o -MF CMakeFiles/ollama.dir/lib/ollama_close.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_close.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o -MF CMakeFiles/ollama.dir/lib/ollama_close.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_close.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_close.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c > CMakeFiles/ollama.dir/lib/ollama_close.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c > CMakeFiles/ollama.dir/lib/ollama_close.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_close.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c -o CMakeFiles/ollama.dir/lib/ollama_close.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c -o CMakeFiles/ollama.dir/lib/ollama_close.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o -MF CMakeFiles/ollama.dir/lib/ollama_copy.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_copy.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o -MF CMakeFiles/ollama.dir/lib/ollama_copy.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_copy.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_copy.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c > CMakeFiles/ollama.dir/lib/ollama_copy.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c > CMakeFiles/ollama.dir/lib/ollama_copy.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_copy.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c -o CMakeFiles/ollama.dir/lib/ollama_copy.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c -o CMakeFiles/ollama.dir/lib/ollama_copy.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o -MF CMakeFiles/ollama.dir/lib/ollama_create.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_create.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o -MF CMakeFiles/ollama.dir/lib/ollama_create.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_create.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_create.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c > CMakeFiles/ollama.dir/lib/ollama_create.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c > CMakeFiles/ollama.dir/lib/ollama_create.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_create.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c -o CMakeFiles/ollama.dir/lib/ollama_create.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c -o CMakeFiles/ollama.dir/lib/ollama_create.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o -MF CMakeFiles/ollama.dir/lib/ollama_delete.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o -MF CMakeFiles/ollama.dir/lib/ollama_delete.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_delete.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c > CMakeFiles/ollama.dir/lib/ollama_delete.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c > CMakeFiles/ollama.dir/lib/ollama_delete.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_delete.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c -o CMakeFiles/ollama.dir/lib/ollama_delete.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c -o CMakeFiles/ollama.dir/lib/ollama_delete.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o -MF CMakeFiles/ollama.dir/lib/ollama_embed.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_embed.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o -MF CMakeFiles/ollama.dir/lib/ollama_embed.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_embed.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_embed.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c > CMakeFiles/ollama.dir/lib/ollama_embed.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c > CMakeFiles/ollama.dir/lib/ollama_embed.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_embed.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c -o CMakeFiles/ollama.dir/lib/ollama_embed.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c -o CMakeFiles/ollama.dir/lib/ollama_embed.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o -MF CMakeFiles/ollama.dir/lib/ollama_generate.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_generate.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o -MF CMakeFiles/ollama.dir/lib/ollama_generate.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_generate.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_generate.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c > CMakeFiles/ollama.dir/lib/ollama_generate.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c > CMakeFiles/ollama.dir/lib/ollama_generate.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_generate.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c -o CMakeFiles/ollama.dir/lib/ollama_generate.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c -o CMakeFiles/ollama.dir/lib/ollama_generate.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o -MF CMakeFiles/ollama.dir/lib/ollama_init.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_init.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o -MF CMakeFiles/ollama.dir/lib/ollama_init.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_init.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_init.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c > CMakeFiles/ollama.dir/lib/ollama_init.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c > CMakeFiles/ollama.dir/lib/ollama_init.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_init.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c -o CMakeFiles/ollama.dir/lib/ollama_init.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c -o CMakeFiles/ollama.dir/lib/ollama_init.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o -MF CMakeFiles/ollama.dir/lib/ollama_list.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o -MF CMakeFiles/ollama.dir/lib/ollama_list.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_list.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c > CMakeFiles/ollama.dir/lib/ollama_list.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c > CMakeFiles/ollama.dir/lib/ollama_list.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_list.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c -o CMakeFiles/ollama.dir/lib/ollama_list.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c -o CMakeFiles/ollama.dir/lib/ollama_list.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o -MF CMakeFiles/ollama.dir/lib/ollama_load.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_load.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o -MF CMakeFiles/ollama.dir/lib/ollama_load.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_load.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_load.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c > CMakeFiles/ollama.dir/lib/ollama_load.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c > CMakeFiles/ollama.dir/lib/ollama_load.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_load.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c -o CMakeFiles/ollama.dir/lib/ollama_load.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c -o CMakeFiles/ollama.dir/lib/ollama_load.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o -MF CMakeFiles/ollama.dir/lib/ollama_ps.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_ps.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o -MF CMakeFiles/ollama.dir/lib/ollama_ps.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_ps.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_ps.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c > CMakeFiles/ollama.dir/lib/ollama_ps.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c > CMakeFiles/ollama.dir/lib/ollama_ps.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_ps.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c -o CMakeFiles/ollama.dir/lib/ollama_ps.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c -o CMakeFiles/ollama.dir/lib/ollama_ps.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o -MF CMakeFiles/ollama.dir/lib/ollama_pull.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_pull.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o -MF CMakeFiles/ollama.dir/lib/ollama_pull.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_pull.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_pull.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c > CMakeFiles/ollama.dir/lib/ollama_pull.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c > CMakeFiles/ollama.dir/lib/ollama_pull.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_pull.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c -o CMakeFiles/ollama.dir/lib/ollama_pull.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c -o CMakeFiles/ollama.dir/lib/ollama_pull.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o -MF CMakeFiles/ollama.dir/lib/ollama_push.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_push.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o -MF CMakeFiles/ollama.dir/lib/ollama_push.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_push.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_push.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c > CMakeFiles/ollama.dir/lib/ollama_push.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c > CMakeFiles/ollama.dir/lib/ollama_push.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_push.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c -o CMakeFiles/ollama.dir/lib/ollama_push.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c -o CMakeFiles/ollama.dir/lib/ollama_push.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o -MF CMakeFiles/ollama.dir/lib/ollama_show.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_show.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o -MF CMakeFiles/ollama.dir/lib/ollama_show.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_show.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_show.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c > CMakeFiles/ollama.dir/lib/ollama_show.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c > CMakeFiles/ollama.dir/lib/ollama_show.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_show.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c -o CMakeFiles/ollama.dir/lib/ollama_show.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c -o CMakeFiles/ollama.dir/lib/ollama_show.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o -MF CMakeFiles/ollama.dir/lib/ollama_unload.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_unload.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o -MF CMakeFiles/ollama.dir/lib/ollama_unload.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_unload.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_unload.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c > CMakeFiles/ollama.dir/lib/ollama_unload.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c > CMakeFiles/ollama.dir/lib/ollama_unload.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_unload.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c -o CMakeFiles/ollama.dir/lib/ollama_unload.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c -o CMakeFiles/ollama.dir/lib/ollama_unload.c.s
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o: libollama/CMakeFiles/ollama.dir/flags.make
 libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c
 libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o: libollama/CMakeFiles/ollama.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o -MF CMakeFiles/ollama.dir/lib/ollama_utils.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_utils.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o -MF CMakeFiles/ollama.dir/lib/ollama_utils.c.o.d -o CMakeFiles/ollama.dir/lib/ollama_utils.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ollama.dir/lib/ollama_utils.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c > CMakeFiles/ollama.dir/lib/ollama_utils.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c > CMakeFiles/ollama.dir/lib/ollama_utils.c.i
 
 libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ollama.dir/lib/ollama_utils.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c -o CMakeFiles/ollama.dir/lib/ollama_utils.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c -o CMakeFiles/ollama.dir/lib/ollama_utils.c.s
 
 # Object files for target ollama
 ollama_OBJECTS = \

@@ -73,15 +73,15 @@ libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o: libollama/C
 libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c
 libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o: libollama/CMakeFiles/test_copy_delete.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o -MF CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o.d -o CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o -MF CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o.d -o CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c
 
 libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c > CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c > CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.i
 
 libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c -o CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c -o CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.s
 
 # Object files for target test_copy_delete
 test_copy_delete_OBJECTS = \

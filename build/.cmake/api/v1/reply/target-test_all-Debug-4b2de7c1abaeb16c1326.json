@@ -1,0 +1,119 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"libollama/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "ollama::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test_chat::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "test_copy_delete::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "test_generate::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "test_list::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "test_load_unload::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "test_ps::@5c32144a0304bf361f3d"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "test_show::@5c32144a0304bf361f3d"
+		}
+	],
+	"id" : "test_all::@5c32144a0304bf361f3d",
+	"name" : "test_all",
+	"paths" : 
+	{
+		"build" : "libollama",
+		"source" : "libollama"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

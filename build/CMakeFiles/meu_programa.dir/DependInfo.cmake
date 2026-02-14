@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alph4b3th/Projects/C/bener-bot/main.c" "CMakeFiles/meu_programa.dir/main.c.o" "gcc" "CMakeFiles/meu_programa.dir/main.c.o.d"
+  "/home/alph4b3th/Projects/C/bener-bot/src/json_utils.c" "CMakeFiles/meu_programa.dir/src/json_utils.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/json_utils.c.o.d"
+  "/home/alph4b3th/Projects/C/bener-bot/src/main.c" "CMakeFiles/meu_programa.dir/src/main.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/main.c.o.d"
+  "/home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

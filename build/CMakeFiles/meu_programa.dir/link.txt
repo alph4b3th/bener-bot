@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/meu_programa.dir/main.c.o -o meu_programa  -Wl,-rpath,/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama/libollama.so /usr/lib/x86_64-linux-gnu/libcurl.so 
+/usr/bin/gcc -g CMakeFiles/meu_programa.dir/src/main.c.o CMakeFiles/meu_programa.dir/src/ollama_client.c.o CMakeFiles/meu_programa.dir/src/json_utils.c.o -o meu_programa  -Wl,-rpath,/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama/libollama.so /usr/lib/x86_64-linux-gnu/libcurl.so -lcjson 

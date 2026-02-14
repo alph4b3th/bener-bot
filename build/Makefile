@@ -291,29 +291,77 @@ test_show/fast:
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_show.dir/build.make libollama/CMakeFiles/test_show.dir/build
 .PHONY : test_show/fast
 
-main.o: main.c.o
-.PHONY : main.o
+src/json_utils.o: src/json_utils.c.o
+.PHONY : src/json_utils.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/main.c.o
-.PHONY : main.c.o
+src/json_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/json_utils.c.o
+.PHONY : src/json_utils.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+src/json_utils.i: src/json_utils.c.i
+.PHONY : src/json_utils.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/main.c.i
-.PHONY : main.c.i
+src/json_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/json_utils.c.i
+.PHONY : src/json_utils.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+src/json_utils.s: src/json_utils.c.s
+.PHONY : src/json_utils.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/main.c.s
-.PHONY : main.c.s
+src/json_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/json_utils.c.s
+.PHONY : src/json_utils.c.s
+
+src/main.o: src/main.c.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/ollama_client.o: src/ollama_client.c.o
+.PHONY : src/ollama_client.o
+
+# target to build an object file
+src/ollama_client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/ollama_client.c.o
+.PHONY : src/ollama_client.c.o
+
+src/ollama_client.i: src/ollama_client.c.i
+.PHONY : src/ollama_client.i
+
+# target to preprocess a source file
+src/ollama_client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/ollama_client.c.i
+.PHONY : src/ollama_client.c.i
+
+src/ollama_client.s: src/ollama_client.c.s
+.PHONY : src/ollama_client.s
+
+# target to generate assembly for a file
+src/ollama_client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/ollama_client.c.s
+.PHONY : src/ollama_client.c.s
 
 # Help Target
 help:
@@ -337,9 +385,15 @@ help:
 	@echo "... test_load_unload"
 	@echo "... test_ps"
 	@echo "... test_show"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/json_utils.o"
+	@echo "... src/json_utils.i"
+	@echo "... src/json_utils.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/ollama_client.o"
+	@echo "... src/ollama_client.i"
+	@echo "... src/ollama_client.s"
 .PHONY : help
 
 

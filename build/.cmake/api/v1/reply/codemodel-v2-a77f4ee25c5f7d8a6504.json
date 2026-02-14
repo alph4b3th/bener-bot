@@ -1,0 +1,176 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "libollama",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libollama-Debug-54d76052d9ef81471d94.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libollama",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bener_bot",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "libollama",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "meu_programa::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-meu_programa-Debug-aeb6919e070404024e2a.json",
+					"name" : "meu_programa",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ollama::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-ollama-Debug-486a89b1caee924552c2.json",
+					"name" : "ollama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_all::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_all-Debug-4b2de7c1abaeb16c1326.json",
+					"name" : "test_all",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_chat::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_chat-Debug-31e82afd98fd07667757.json",
+					"name" : "test_chat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_copy_delete::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_copy_delete-Debug-6adc2abeb86e5d896927.json",
+					"name" : "test_copy_delete",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_generate::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_generate-Debug-a67d9f906549566fc80d.json",
+					"name" : "test_generate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_list::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_list-Debug-5d6b38eded584dcb149f.json",
+					"name" : "test_list",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_load_unload::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_load_unload-Debug-9e968f6b5de10e0127e7.json",
+					"name" : "test_load_unload",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_ps::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_ps-Debug-576431a5069debf790fd.json",
+					"name" : "test_ps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_show::@5c32144a0304bf361f3d",
+					"jsonFile" : "target-test_show-Debug-ba1937993596ab8fa2c5.json",
+					"name" : "test_show",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alph4b3th/Projects/C/bener-bot/build",
+		"source" : "/home/alph4b3th/Projects/C/bener-bot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

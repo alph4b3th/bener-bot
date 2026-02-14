@@ -69,33 +69,65 @@ include CMakeFiles/meu_programa.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/meu_programa.dir/flags.make
 
-CMakeFiles/meu_programa.dir/main.c.o: CMakeFiles/meu_programa.dir/flags.make
-CMakeFiles/meu_programa.dir/main.c.o: /home/alph4b3th/Projects/C/bener-bot/main.c
-CMakeFiles/meu_programa.dir/main.c.o: CMakeFiles/meu_programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/meu_programa.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/meu_programa.dir/main.c.o -MF CMakeFiles/meu_programa.dir/main.c.o.d -o CMakeFiles/meu_programa.dir/main.c.o -c /home/alph4b3th/Projects/C/bener-bot/main.c
+CMakeFiles/meu_programa.dir/src/main.c.o: CMakeFiles/meu_programa.dir/flags.make
+CMakeFiles/meu_programa.dir/src/main.c.o: /home/alph4b3th/Projects/C/bener-bot/src/main.c
+CMakeFiles/meu_programa.dir/src/main.c.o: CMakeFiles/meu_programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/meu_programa.dir/src/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/meu_programa.dir/src/main.c.o -MF CMakeFiles/meu_programa.dir/src/main.c.o.d -o CMakeFiles/meu_programa.dir/src/main.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/main.c
 
-CMakeFiles/meu_programa.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/meu_programa.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/main.c > CMakeFiles/meu_programa.dir/main.c.i
+CMakeFiles/meu_programa.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/meu_programa.dir/src/main.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/src/main.c > CMakeFiles/meu_programa.dir/src/main.c.i
 
-CMakeFiles/meu_programa.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/meu_programa.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/main.c -o CMakeFiles/meu_programa.dir/main.c.s
+CMakeFiles/meu_programa.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/meu_programa.dir/src/main.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/src/main.c -o CMakeFiles/meu_programa.dir/src/main.c.s
+
+CMakeFiles/meu_programa.dir/src/ollama_client.c.o: CMakeFiles/meu_programa.dir/flags.make
+CMakeFiles/meu_programa.dir/src/ollama_client.c.o: /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c
+CMakeFiles/meu_programa.dir/src/ollama_client.c.o: CMakeFiles/meu_programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/meu_programa.dir/src/ollama_client.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/meu_programa.dir/src/ollama_client.c.o -MF CMakeFiles/meu_programa.dir/src/ollama_client.c.o.d -o CMakeFiles/meu_programa.dir/src/ollama_client.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c
+
+CMakeFiles/meu_programa.dir/src/ollama_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/meu_programa.dir/src/ollama_client.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c > CMakeFiles/meu_programa.dir/src/ollama_client.c.i
+
+CMakeFiles/meu_programa.dir/src/ollama_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/meu_programa.dir/src/ollama_client.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c -o CMakeFiles/meu_programa.dir/src/ollama_client.c.s
+
+CMakeFiles/meu_programa.dir/src/json_utils.c.o: CMakeFiles/meu_programa.dir/flags.make
+CMakeFiles/meu_programa.dir/src/json_utils.c.o: /home/alph4b3th/Projects/C/bener-bot/src/json_utils.c
+CMakeFiles/meu_programa.dir/src/json_utils.c.o: CMakeFiles/meu_programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/meu_programa.dir/src/json_utils.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/meu_programa.dir/src/json_utils.c.o -MF CMakeFiles/meu_programa.dir/src/json_utils.c.o.d -o CMakeFiles/meu_programa.dir/src/json_utils.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/json_utils.c
+
+CMakeFiles/meu_programa.dir/src/json_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/meu_programa.dir/src/json_utils.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/src/json_utils.c > CMakeFiles/meu_programa.dir/src/json_utils.c.i
+
+CMakeFiles/meu_programa.dir/src/json_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/meu_programa.dir/src/json_utils.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/src/json_utils.c -o CMakeFiles/meu_programa.dir/src/json_utils.c.s
 
 # Object files for target meu_programa
 meu_programa_OBJECTS = \
-"CMakeFiles/meu_programa.dir/main.c.o"
+"CMakeFiles/meu_programa.dir/src/main.c.o" \
+"CMakeFiles/meu_programa.dir/src/ollama_client.c.o" \
+"CMakeFiles/meu_programa.dir/src/json_utils.c.o"
 
 # External object files for target meu_programa
 meu_programa_EXTERNAL_OBJECTS =
 
-meu_programa: CMakeFiles/meu_programa.dir/main.c.o
+meu_programa: CMakeFiles/meu_programa.dir/src/main.c.o
+meu_programa: CMakeFiles/meu_programa.dir/src/ollama_client.c.o
+meu_programa: CMakeFiles/meu_programa.dir/src/json_utils.c.o
 meu_programa: CMakeFiles/meu_programa.dir/build.make
 meu_programa: libollama/libollama.so
 meu_programa: /usr/lib/x86_64-linux-gnu/libcurl.so
 meu_programa: CMakeFiles/meu_programa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable meu_programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable meu_programa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/meu_programa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

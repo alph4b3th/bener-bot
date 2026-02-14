@@ -73,15 +73,15 @@ libollama/CMakeFiles/test_list.dir/test/test_list.c.o: libollama/CMakeFiles/test
 libollama/CMakeFiles/test_list.dir/test/test_list.c.o: /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c
 libollama/CMakeFiles/test_list.dir/test/test_list.c.o: libollama/CMakeFiles/test_list.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libollama/CMakeFiles/test_list.dir/test/test_list.c.o"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_list.dir/test/test_list.c.o -MF CMakeFiles/test_list.dir/test/test_list.c.o.d -o CMakeFiles/test_list.dir/test/test_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libollama/CMakeFiles/test_list.dir/test/test_list.c.o -MF CMakeFiles/test_list.dir/test/test_list.c.o.d -o CMakeFiles/test_list.dir/test/test_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c
 
 libollama/CMakeFiles/test_list.dir/test/test_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_list.dir/test/test_list.c.i"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c > CMakeFiles/test_list.dir/test/test_list.c.i
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c > CMakeFiles/test_list.dir/test/test_list.c.i
 
 libollama/CMakeFiles/test_list.dir/test/test_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_list.dir/test/test_list.c.s"
-	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c -o CMakeFiles/test_list.dir/test/test_list.c.s
+	cd /home/alph4b3th/Projects/C/bener-bot/build/libollama && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c -o CMakeFiles/test_list.dir/test/test_list.c.s
 
 # Object files for target test_list
 test_list_OBJECTS = \

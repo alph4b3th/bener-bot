@@ -1,0 +1,164 @@
+[
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/meu_programa.dir/src/main.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/main.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/src/main.c",
+  "output": "CMakeFiles/meu_programa.dir/src/main.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/meu_programa.dir/src/ollama_client.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c",
+  "output": "CMakeFiles/meu_programa.dir/src/ollama_client.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/meu_programa.dir/src/json_utils.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/json_utils.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/src/json_utils.c",
+  "output": "CMakeFiles/meu_programa.dir/src/json_utils.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_blob.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_blob.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_chat.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_chat.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_close.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_close.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_close.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_copy.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_copy.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_copy.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_create.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_create.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_create.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_delete.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_delete.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_embed.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_embed.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_embed.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_generate.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_generate.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_generate.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_init.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_init.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_init.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_list.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_list.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_load.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_load.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_load.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_ps.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_ps.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_ps.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_pull.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_pull.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_pull.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_push.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_push.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_push.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_show.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_show.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_show.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_unload.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_unload.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_unload.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_utils.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_utils.c",
+  "output": "libollama/CMakeFiles/ollama.dir/lib/ollama_utils.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_chat.dir/test/test_chat.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_chat.c",
+  "output": "libollama/CMakeFiles/test_chat.dir/test/test_chat.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_copy_delete.c",
+  "output": "libollama/CMakeFiles/test_copy_delete.dir/test/test_copy_delete.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_generate.dir/test/test_generate.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_generate.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_generate.c",
+  "output": "libollama/CMakeFiles/test_generate.dir/test/test_generate.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_list.dir/test/test_list.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_list.c",
+  "output": "libollama/CMakeFiles/test_list.dir/test/test_list.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_load_unload.dir/test/test_load_unload.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_load_unload.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_load_unload.c",
+  "output": "libollama/CMakeFiles/test_load_unload.dir/test/test_load_unload.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_ps.dir/test/test_ps.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_ps.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_ps.c",
+  "output": "libollama/CMakeFiles/test_ps.dir/test/test_ps.c.o"
+},
+{
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/test_show.dir/test/test_show.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/test/test_show.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/test/test_show.c",
+  "output": "libollama/CMakeFiles/test_show.dir/test/test_show.c.o"
+}
+]
