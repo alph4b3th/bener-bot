@@ -3,12 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 Tool tools[MAX_TOOLS];
 int tool_count = 0;
 
 void register_tool(const char *name, const char *description, int param_count,
-                   const char **param_names, const char **param_types, void (*fn)(void **))
+                   const char **param_names, const char **param_types, char *(*fn)(void **args))
 {
     Tool *t = &tools[tool_count++];
     t->name = name;
@@ -44,13 +43,23 @@ cJSON *generate_tools_json(void)
     return arr;
 }
 
-void call_tool_from_json(const char *json_str)
-{   
+char *call_tool_from_json(const char *json_str)
+{
+    // printf("[DEBUG] JSON recebido para executar ferramenta: %s\n", json_str);
+    printf("\033[38;5;214m[DEBUG] JSON recebido para executar ferramenta: %s\033[0m\n", json_str);
 
-printf("[DEBUG] JSON recebido para executar ferramenta: %s\n", json_str);
+    
     cJSON *root = cJSON_Parse(json_str);
+    if (!root)
+        return NULL;
+
     const char *fname = cJSON_GetObjectItem(root, "function")->valuestring;
+    char fname_cpy[128];
+    strncpy(fname_cpy, fname, sizeof(fname_cpy) - 1);
+    fname_cpy[sizeof(fname_cpy) - 1] = '\0';
     cJSON *params = cJSON_GetObjectItem(root, "parameters");
+
+    char *tool_result = NULL;
 
     for (int i = 0; i < tool_count; i++)
     {
@@ -79,7 +88,7 @@ printf("[DEBUG] JSON recebido para executar ferramenta: %s\n", json_str);
                 }
             }
 
-            tools[i].fn(args);
+            tool_result = tools[i].fn(args); // recebe o retorno
 
             for (int j = 0; j < tools[i].param_count; j++)
             {
@@ -89,7 +98,37 @@ printf("[DEBUG] JSON recebido para executar ferramenta: %s\n", json_str);
             break;
         }
     }
+
     cJSON_Delete(root);
+
+    if (!tool_result)
+        return NULL;
+
+    cJSON *json_result = cJSON_CreateObject();
+    cJSON_AddStringToObject(json_result, "function", fname_cpy);
+
+    cJSON *result_obj = cJSON_CreateObject();
+
+    cJSON *parsed_output = cJSON_Parse(tool_result);
+    if (parsed_output)
+    {
+
+        cJSON_AddItemToObject(result_obj, "data", parsed_output);
+    }
+    else
+    {
+
+        cJSON_AddStringToObject(result_obj, "output", tool_result);
+    }
+
+    cJSON_AddItemToObject(json_result, "result", result_obj);
+
+    char *json_str_result = cJSON_PrintUnformatted(json_result);
+
+    cJSON_Delete(json_result);
+    free(tool_result);
+
+    return json_str_result; // quem chamar deve free()
 }
 
 cJSON *get_registered_tools_json(void)
