@@ -62,21 +62,24 @@ void register_weather_tool()
         fn_weather_fake);
 }
 
-void load_env(const char *filename) {
+void load_env(const char *filename)
+{
     FILE *file = fopen(filename, "r");
-    if (!file) return;
+    if (!file)
+        return;
 
     char line[512];
-    while (fgets(line, sizeof(line), file)) {
+    while (fgets(line, sizeof(line), file))
+    {
         char *key = strtok(line, "=");
         char *value = strtok(NULL, "\n");
-        if (key && value) {
+        if (key && value)
+        {
             setenv(key, value, 1);
         }
     }
     fclose(file);
 }
-
 
 int main()
 {
@@ -108,13 +111,13 @@ int main()
     memory_show(&graph);
 
     const char *host = getenv("OLLAMA_HOST");
-    const char *model = getenv("OLLAMA_MODEL") ;
+    const char *model = getenv("OLLAMA_MODEL");
 
-    if (model == NULL || host == NULL) {
+    if (model == NULL || host == NULL)
+    {
         printf("arquivo .env inexistente ou mal configurado! CodeError>>>114\n");
         return -1;
     }
-   
 
     int running = 1;
     char buffer[300];
@@ -164,8 +167,10 @@ int main()
 
         char *response = get_content_from_json(result.buf.base);
 
-        if (cJSON_Parse(response)) // só executa se for JSON válido
+        cJSON *parsed = cJSON_Parse(response);
+        if (parsed) // só executa se for JSON válido
         {
+            cJSON_Delete(parsed);
             char *tool_output = call_tool_from_json(response);
             printf("\033[33m[TOOL RESULT] %s\033[0m\n", tool_output);
 
@@ -186,7 +191,6 @@ int main()
             free(response);
             response = get_content_from_json(result.buf.base);
 
-            cJSON_Delete(tool_result);
             free(tool_output);
         }
 
