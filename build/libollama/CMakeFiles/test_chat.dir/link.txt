@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_chat.dir/test/test_chat.c.o -o test_chat   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama.so -lcurl -lcjson 

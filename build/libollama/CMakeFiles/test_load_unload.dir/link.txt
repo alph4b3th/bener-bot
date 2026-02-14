@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_load_unload.dir/test/test_load_unload.c.o -o test_load_unload   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama.so -lcurl -lcjson 

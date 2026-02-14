@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ollama.dir/lib/ollama_blob.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_blob.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_chat.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_chat.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_close.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_close.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_copy.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_copy.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_create.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_create.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_delete.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_delete.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_embed.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_embed.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_generate.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_generate.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_init.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_init.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_list.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_list.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_load.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_load.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_ps.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_ps.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_pull.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_pull.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_push.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_push.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_show.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_show.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_unload.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_unload.c.o.d"
+  "CMakeFiles/ollama.dir/lib/ollama_utils.c.o"
+  "CMakeFiles/ollama.dir/lib/ollama_utils.c.o.d"
+  "libollama.pdb"
+  "libollama.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ollama.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

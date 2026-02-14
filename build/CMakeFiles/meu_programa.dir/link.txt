@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/meu_programa.dir/main.c.o -o meu_programa  -Wl,-rpath,/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama/libollama.so /usr/lib/x86_64-linux-gnu/libcurl.so 

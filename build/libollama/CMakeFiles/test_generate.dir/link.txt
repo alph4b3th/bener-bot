@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_generate.dir/test/test_generate.c.o -o test_generate   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama.so -lcurl -lcjson 

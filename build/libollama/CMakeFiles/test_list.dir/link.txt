@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_list.dir/test/test_list.c.o -o test_list   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/alph4b3th/Projects/C/bener-bot/build/libollama libollama.so -lcurl -lcjson 
