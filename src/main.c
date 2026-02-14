@@ -62,8 +62,26 @@ void register_weather_tool()
         fn_weather_fake);
 }
 
+void load_env(const char *filename) {
+    FILE *file = fopen(filename, "r");
+    if (!file) return;
+
+    char line[512];
+    while (fgets(line, sizeof(line), file)) {
+        char *key = strtok(line, "=");
+        char *value = strtok(NULL, "\n");
+        if (key && value) {
+            setenv(key, value, 1);
+        }
+    }
+    fclose(file);
+}
+
+
 int main()
 {
+    load_env(".env");
+
     Graph graph;
     graph.nodes = NULL;
     graph.node_count = 0;
@@ -89,9 +107,14 @@ int main()
 
     memory_show(&graph);
 
-    const char *host = "http://localhost:11434";
-    const char *model = "llama3.2:latest";
-    const char *prompt = "Explique C vs Rust em uma frase.";
+    const char *host = getenv("OLLAMA_HOST");
+    const char *model = getenv("OLLAMA_MODEL") ;
+
+    if (model == NULL || host == NULL) {
+        printf("arquivo .env inexistente ou mal configurado! CodeError>>>114\n");
+        return -1;
+    }
+   
 
     int running = 1;
     char buffer[300];
@@ -144,8 +167,7 @@ int main()
         if (cJSON_Parse(response)) // só executa se for JSON válido
         {
             char *tool_output = call_tool_from_json(response);
-printf("\033[33m[TOOL RESULT] %s\033[0m\n", tool_output);
-
+            printf("\033[33m[TOOL RESULT] %s\033[0m\n", tool_output);
 
             cJSON *tool_result = cJSON_CreateObject();
             cJSON_AddStringToObject(tool_result, "role", "user");
