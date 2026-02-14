@@ -5,6 +5,14 @@
 #include <cjson/cJSON.h>
 #include "memory_graph.h"
 
+
+void print_splash() {
+     printf("========================================\n");
+    printf("           BENDER-BOT-JARVIS            \n");
+    printf("========================================\n");
+    printf("Digite algo para conversar com o Jarvis.\n");
+    printf("Para sair, digite 'exit' e pressione Enter.\n\n");
+}
 int main()
 {
     Graph graph;
@@ -36,42 +44,56 @@ int main()
     const char *model = "gemma3:1b";
     const char *prompt = "Explique C vs Rust em uma frase.";
 
-    printf("Gerando...\n\n");
+    int running = 1;
+    char buffer[300];
 
     cJSON *short_memory = cJSON_CreateArray();
 
-    cJSON *msg1 = cJSON_CreateObject();
-    cJSON_AddStringToObject(msg1, "role", "system");
-    cJSON_AddStringToObject(msg1, "content", "Você é um assistente útil chamado Jarvis.");
-    cJSON_AddItemToArray(short_memory, msg1);
-
-    cJSON *msg2 = cJSON_CreateObject();
-    cJSON_AddStringToObject(msg2, "role", "user");
-    cJSON_AddStringToObject(msg2, "content", "Qual o seu nome?");
-    cJSON_AddItemToArray(short_memory, msg2);
-
-    char *short_memory_json = cJSON_PrintUnformatted(short_memory);
-
-    printf("Short Memory: [%s]\n", short_memory_json);
+    cJSON *system_prompt = cJSON_CreateObject();
+    cJSON_AddStringToObject(system_prompt, "role", "system");
+    cJSON_AddStringToObject(system_prompt, "content", "Você é um assistente útil chamado Jarvis.");
+    cJSON_AddItemToArray(short_memory, system_prompt);
 
     ollama_result_t result;
-    if (generate_text(host, model, short_memory_json, &result) != 0)
+    print_splash();
+    while (running)
     {
-        printf("Erro na geração. \n");
-        return 1;
+        printf("input:");
+        if (fgets(buffer, sizeof(buffer), stdin) == NULL)
+        {
+            continue;
+        }
+
+        buffer[strcspn(buffer, "\n")] = 0;
+
+        if (strcmp(buffer, "!exit") == 0) {
+            break;
+        }
+
+        cJSON *input_message = cJSON_CreateObject();
+        cJSON_AddStringToObject(input_message, "role", "user");
+        cJSON_AddStringToObject(input_message, "content", buffer);
+        cJSON_AddItemToArray(short_memory, input_message);
+
+        char *short_memory_json = cJSON_PrintUnformatted(short_memory);
+
+        if (generate_text(host, model, short_memory_json, &result) != 0)
+        {
+            printf("Erro na geração. \n");
+            return 1;
+        }
+
+        char *response = get_content_from_json(result.buf.base);
+
+        cJSON *response_message = cJSON_CreateObject();
+        cJSON_AddStringToObject(response_message, "role", "system");
+        cJSON_AddStringToObject(response_message, "content", response);
+        cJSON_AddItemToArray(short_memory, response_message);
+
+        printf("Jarvis: %s\n", response);
     }
 
-    char *response = get_content_from_json(result.buf.base);
-    printf("result:\n\t%s", response);
-    printf("\n\nConcluído.\n");
-
-    cJSON *msg3 = cJSON_CreateObject();
-    cJSON_AddStringToObject(msg3, "role", "system");
-    cJSON_AddStringToObject(msg3, "content", response);
-    cJSON_AddItemToArray(short_memory, msg3);
-
-    short_memory_json = cJSON_PrintUnformatted(short_memory);
-
+    char *short_memory_json =cJSON_PrintUnformatted(short_memory);
     printf("Short Memory: [%s]\n", short_memory_json);
 
     cJSON_Delete(short_memory);
