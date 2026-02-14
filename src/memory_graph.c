@@ -8,6 +8,8 @@ typedef struct Node
     char type[50];
     char property[100];
 
+    float confidence;
+
     struct Node *Next;
     struct Node *edges;
     struct Node *edge_next;
@@ -22,13 +24,20 @@ typedef struct Graph
 Node *memory_create_node(int id, const char *type, const char *property)
 {
     Node *node = malloc(sizeof(Node));
+    if (!node)
+        return NULL;
+
     node->id = id;
     node->Next = NULL;
     node->edge_next = NULL;
     node->edges = NULL;
+    node->confidence = 0.0f; // padrão
 
-    strcpy(node->property, property);
-    strcpy(node->type, type);
+    strncpy(node->type, type, sizeof(node->type) - 1);
+    node->type[sizeof(node->type) - 1] = '\0';
+
+    strncpy(node->property, property, sizeof(node->property) - 1);
+    node->property[sizeof(node->property) - 1] = '\0';
 
     return node;
 }
@@ -40,26 +49,42 @@ void memory_add_node(Graph *graph, Node *node)
     graph->node_count++;
 }
 
-void memory_add_edge(Node *from, Node *to)
+void memory_add_edge(Node *from, Node *to, float confidence)
 {
     Node *edge = memory_create_node(to->id, to->type, to->property);
+    edge->confidence = confidence;
     edge->edge_next = from->edges;
     from->edges = edge;
+}
+
+void memory_update_edge_confidence(Node *edge, float confidence)
+{
+    edge->confidence = confidence;
+}
+
+int memory_update_edge_confidence_by_id(Node *from, int target_id, float confidence)
+{
+    Node *edge = from->edges;
+    while (edge != NULL)
+    {
+        if (edge->id == target_id)
+        {
+            edge->confidence = confidence;
+            return 1;
+        }
+        edge = edge->edge_next;
+    }
+    return 0;
 }
 Node *memory_find_node_from_id(Graph *graph, int id)
 {
     Node *current = graph->nodes;
-
     while (current != NULL)
     {
         if (current->id == id)
-        {
             return current;
-        }
-
         current = current->Next;
     }
-
     return NULL;
 }
 
@@ -74,14 +99,13 @@ void memory_show(Graph *graph)
         printf("  Propriedade: %s\n", current->property);
 
         Node *edge = current->edges;
-
         if (edge)
         {
             printf("  Conexões:\n");
             while (edge != NULL)
             {
-                printf("    -> Nó ID: %d | Tipo: %s | Propriedade: %s\n",
-                       edge->id, edge->type, edge->property);
+                printf("    -> Nó ID: %d | Tipo: %s | Propriedade: %s | Confiança: %.2f\n",
+                       edge->id, edge->type, edge->property, edge->confidence);
                 edge = edge->edge_next;
             }
         }
@@ -91,7 +115,6 @@ void memory_show(Graph *graph)
         }
 
         printf("-------------------------\n");
-
         current = current->Next;
     }
 }

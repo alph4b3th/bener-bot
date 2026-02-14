@@ -25,7 +25,9 @@ typedef struct Graph
 
 Node *memory_create_node(int id, const char *type, const char *property);
 void memory_add_node(Graph *graph, Node *node);
-void memory_add_edge(Node *from, Node *to);
+void memory_add_edge(Node *from, Node *to, float confidence);
+void memory_update_edge_confidence(Node *edge, float confidence);
+int memory_update_edge_confidence_by_id(Node *from, int target_id, float confidence);
 Node* memory_find_node_from_id(Graph *graph, int id);
 void memory_show(Graph *graph);
 

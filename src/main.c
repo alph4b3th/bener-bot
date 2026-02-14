@@ -19,17 +19,18 @@ int main()
     memory_add_node(&graph, preference_node);
     memory_add_node(&graph, topic_node);
 
-    memory_add_edge(user_node, preference_node);
-    memory_add_edge(user_node, topic_node);
+    memory_add_edge(user_node, preference_node, 0.9f);
+    memory_add_edge(user_node, topic_node, 0.7f);
+
+    memory_update_edge_confidence_by_id(user_node, 3, 0.2f);
 
     Node *search_node = memory_find_node_from_id(&graph, 1);
-    if (search_node != NULL) {
+    if (search_node != NULL)
+    {
         printf("Encontrado nó: ID=%d, Type=%s, Property=%s\n", search_node->id, search_node->type, search_node->property);
     }
 
     memory_show(&graph);
-
-    return;
 
     const char *host = "http://localhost:11434";
     const char *model = "gemma3:1b";
