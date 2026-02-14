@@ -339,6 +339,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/memory_graph.o: src/memory_graph.c.o
+.PHONY : src/memory_graph.o
+
+# target to build an object file
+src/memory_graph.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/memory_graph.c.o
+.PHONY : src/memory_graph.c.o
+
+src/memory_graph.i: src/memory_graph.c.i
+.PHONY : src/memory_graph.i
+
+# target to preprocess a source file
+src/memory_graph.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/memory_graph.c.i
+.PHONY : src/memory_graph.c.i
+
+src/memory_graph.s: src/memory_graph.c.s
+.PHONY : src/memory_graph.s
+
+# target to generate assembly for a file
+src/memory_graph.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/memory_graph.c.s
+.PHONY : src/memory_graph.c.s
+
 src/ollama_client.o: src/ollama_client.c.o
 .PHONY : src/ollama_client.o
 
@@ -391,6 +415,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/memory_graph.o"
+	@echo "... src/memory_graph.i"
+	@echo "... src/memory_graph.s"
 	@echo "... src/ollama_client.o"
 	@echo "... src/ollama_client.i"
 	@echo "... src/ollama_client.s"

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alph4b3th/Projects/C/bener-bot/src/json_utils.c" "CMakeFiles/meu_programa.dir/src/json_utils.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/json_utils.c.o.d"
   "/home/alph4b3th/Projects/C/bener-bot/src/main.c" "CMakeFiles/meu_programa.dir/src/main.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/main.c.o.d"
+  "/home/alph4b3th/Projects/C/bener-bot/src/memory_graph.c" "CMakeFiles/meu_programa.dir/src/memory_graph.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/memory_graph.c.o.d"
   "/home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o.d"
   )
 

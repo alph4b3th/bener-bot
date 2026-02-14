@@ -106,12 +106,12 @@ libollama/clean: libollama/CMakeFiles/test_show.dir/clean
 CMakeFiles/meu_programa.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=1,2,3,4 "Built target meu_programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target meu_programa"
 .PHONY : CMakeFiles/meu_programa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/meu_programa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/meu_programa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles 0
 .PHONY : CMakeFiles/meu_programa.dir/rule
@@ -132,7 +132,7 @@ CMakeFiles/meu_programa.dir/clean:
 libollama/CMakeFiles/ollama.dir/all:
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/ollama.dir/build.make libollama/CMakeFiles/ollama.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/ollama.dir/build.make libollama/CMakeFiles/ollama.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target ollama"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target ollama"
 .PHONY : libollama/CMakeFiles/ollama.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +191,7 @@ libollama/CMakeFiles/test_all.dir/clean:
 libollama/CMakeFiles/test_chat.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_chat.dir/build.make libollama/CMakeFiles/test_chat.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_chat.dir/build.make libollama/CMakeFiles/test_chat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=23,24 "Built target test_chat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=24,25 "Built target test_chat"
 .PHONY : libollama/CMakeFiles/test_chat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -217,7 +217,7 @@ libollama/CMakeFiles/test_chat.dir/clean:
 libollama/CMakeFiles/test_copy_delete.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_copy_delete.dir/build.make libollama/CMakeFiles/test_copy_delete.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_copy_delete.dir/build.make libollama/CMakeFiles/test_copy_delete.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=25,26 "Built target test_copy_delete"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=26,27 "Built target test_copy_delete"
 .PHONY : libollama/CMakeFiles/test_copy_delete.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,7 +243,7 @@ libollama/CMakeFiles/test_copy_delete.dir/clean:
 libollama/CMakeFiles/test_generate.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_generate.dir/build.make libollama/CMakeFiles/test_generate.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_generate.dir/build.make libollama/CMakeFiles/test_generate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=27,28 "Built target test_generate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=28,29 "Built target test_generate"
 .PHONY : libollama/CMakeFiles/test_generate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -269,7 +269,7 @@ libollama/CMakeFiles/test_generate.dir/clean:
 libollama/CMakeFiles/test_list.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_list.dir/build.make libollama/CMakeFiles/test_list.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_list.dir/build.make libollama/CMakeFiles/test_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=29,30 "Built target test_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=30,31 "Built target test_list"
 .PHONY : libollama/CMakeFiles/test_list.dir/all
 
 # Build rule for subdir invocation for target.
@@ -295,7 +295,7 @@ libollama/CMakeFiles/test_list.dir/clean:
 libollama/CMakeFiles/test_load_unload.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_load_unload.dir/build.make libollama/CMakeFiles/test_load_unload.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_load_unload.dir/build.make libollama/CMakeFiles/test_load_unload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=31,32 "Built target test_load_unload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=32,33 "Built target test_load_unload"
 .PHONY : libollama/CMakeFiles/test_load_unload.dir/all
 
 # Build rule for subdir invocation for target.
@@ -321,7 +321,7 @@ libollama/CMakeFiles/test_load_unload.dir/clean:
 libollama/CMakeFiles/test_ps.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_ps.dir/build.make libollama/CMakeFiles/test_ps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_ps.dir/build.make libollama/CMakeFiles/test_ps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=33,34 "Built target test_ps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=34,35 "Built target test_ps"
 .PHONY : libollama/CMakeFiles/test_ps.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ libollama/CMakeFiles/test_ps.dir/clean:
 libollama/CMakeFiles/test_show.dir/all: libollama/CMakeFiles/ollama.dir/all
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_show.dir/build.make libollama/CMakeFiles/test_show.dir/depend
 	$(MAKE) $(MAKESILENT) -f libollama/CMakeFiles/test_show.dir/build.make libollama/CMakeFiles/test_show.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=35,36 "Built target test_show"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alph4b3th/Projects/C/bener-bot/build/CMakeFiles --progress-num=36,37 "Built target test_show"
 .PHONY : libollama/CMakeFiles/test_show.dir/all
 
 # Build rule for subdir invocation for target.

@@ -92,4 +92,8 @@ CMakeFiles/meu_programa.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/curl/mprintf.h \
  /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h \
  /home/alph4b3th/Projects/C/bener-bot/src/json_utils.h \
- /usr/include/cjson/cJSON.h
+ /usr/include/cjson/cJSON.h \
+ /home/alph4b3th/Projects/C/bener-bot/src/memory_graph.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
