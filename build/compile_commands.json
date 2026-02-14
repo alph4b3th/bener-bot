@@ -24,6 +24,12 @@
   "output": "CMakeFiles/meu_programa.dir/src/memory_graph.c.o"
 },
 {
+  "directory": "/home/alph4b3th/Projects/C/bener-bot/build",
+  "command": "/usr/bin/gcc  -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -o CMakeFiles/meu_programa.dir/src/tools.c.o -c /home/alph4b3th/Projects/C/bener-bot/src/tools.c",
+  "file": "/home/alph4b3th/Projects/C/bener-bot/src/tools.c",
+  "output": "CMakeFiles/meu_programa.dir/src/tools.c.o"
+},
+{
   "directory": "/home/alph4b3th/Projects/C/bener-bot/build/libollama",
   "command": "/usr/bin/gcc -Dollama_EXPORTS -I/home/alph4b3th/Projects/C/bener-bot/libollama/lib/public -g -fPIC -o CMakeFiles/ollama.dir/lib/ollama_blob.c.o -c /home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c",
   "file": "/home/alph4b3th/Projects/C/bener-bot/libollama/lib/ollama_blob.c",

@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alph4b3th/Projects/C/bener-bot/src/main.c" "CMakeFiles/meu_programa.dir/src/main.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/main.c.o.d"
   "/home/alph4b3th/Projects/C/bener-bot/src/memory_graph.c" "CMakeFiles/meu_programa.dir/src/memory_graph.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/memory_graph.c.o.d"
   "/home/alph4b3th/Projects/C/bener-bot/src/ollama_client.c" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/ollama_client.c.o.d"
+  "/home/alph4b3th/Projects/C/bener-bot/src/tools.c" "CMakeFiles/meu_programa.dir/src/tools.c.o" "gcc" "CMakeFiles/meu_programa.dir/src/tools.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

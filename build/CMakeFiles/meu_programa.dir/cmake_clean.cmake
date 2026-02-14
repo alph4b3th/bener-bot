@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/meu_programa.dir/src/memory_graph.c.o.d"
   "CMakeFiles/meu_programa.dir/src/ollama_client.c.o"
   "CMakeFiles/meu_programa.dir/src/ollama_client.c.o.d"
+  "CMakeFiles/meu_programa.dir/src/tools.c.o"
+  "CMakeFiles/meu_programa.dir/src/tools.c.o.d"
   "meu_programa"
   "meu_programa.pdb"
 )

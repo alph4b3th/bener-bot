@@ -387,6 +387,30 @@ src/ollama_client.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/ollama_client.c.s
 .PHONY : src/ollama_client.c.s
 
+src/tools.o: src/tools.c.o
+.PHONY : src/tools.o
+
+# target to build an object file
+src/tools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/tools.c.o
+.PHONY : src/tools.c.o
+
+src/tools.i: src/tools.c.i
+.PHONY : src/tools.i
+
+# target to preprocess a source file
+src/tools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/tools.c.i
+.PHONY : src/tools.c.i
+
+src/tools.s: src/tools.c.s
+.PHONY : src/tools.s
+
+# target to generate assembly for a file
+src/tools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_programa.dir/build.make CMakeFiles/meu_programa.dir/src/tools.c.s
+.PHONY : src/tools.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -421,6 +445,9 @@ help:
 	@echo "... src/ollama_client.o"
 	@echo "... src/ollama_client.i"
 	@echo "... src/ollama_client.s"
+	@echo "... src/tools.o"
+	@echo "... src/tools.i"
+	@echo "... src/tools.s"
 .PHONY : help
 
 

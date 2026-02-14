@@ -10,6 +10,7 @@ add_executable(meu_programa
     src/ollama_client.c
     src/json_utils.c
     src/memory_graph.c
+    src/tools.c
 )
 
 

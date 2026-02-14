@@ -96,4 +96,5 @@ CMakeFiles/meu_programa.dir/src/main.c.o: \
  /home/alph4b3th/Projects/C/bener-bot/src/memory_graph.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /home/alph4b3th/Projects/C/bener-bot/src/tools.h
