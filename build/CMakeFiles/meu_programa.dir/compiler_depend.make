@@ -33,6 +33,7 @@ CMakeFiles/meu_programa.dir/src/json_utils.c.o: /home/alph4b3th/Projects/C/bener
 
 CMakeFiles/meu_programa.dir/src/main.c.o: /home/alph4b3th/Projects/C/bener-bot/src/main.c \
   /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.h \
+  /usr/include/cjson/cJSON.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \

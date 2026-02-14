@@ -9,12 +9,19 @@ int generate_text(const char *host, const char *model, const char *prompt) {
         return 1;
 
     ollama_result_t result;
-    result.buf.type = OLLAMA_RESULT_TYPE_CALLBACK;
+    result.type = OLLAMA_RESULT_TYPE_CALLBACK;
+
     result.call.callback = stream_json_callback;
     result.call.callback_handle = NULL;
 
-    int status = ollama_generate(client, model, prompt, NULL, &result);
+    // int status = ollama_generate(client, model, prompt, NULL, &result);
+   char *param_json = "{\"stream\": true}";
+int status = ollama_chat(client, model, (char *)prompt, param_json, &result);
 
+    if (status != 0) {
+        printf("falha.");
+        return -1;
+    }
     ollama_close(client);
     return status;
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "ollama_client.h"
+#include <cjson/cJSON.h>
 
 int main() {
     const char *host = "http://localhost:11434";
@@ -9,7 +10,24 @@ int main() {
 
     printf("Gerando...\n\n");
 
-    if (generate_text(host, model, prompt) != 0) {
+    cJSON *messages = cJSON_CreateArray();
+   
+    cJSON *msg1 = cJSON_CreateObject();
+    cJSON_AddStringToObject(msg1, "role", "system");
+    cJSON_AddStringToObject(msg1, "content", "Você é um assistente útil chamado Jarvis.");
+    cJSON_AddItemToArray(messages, msg1);
+
+
+    cJSON *msg2 = cJSON_CreateObject();
+    cJSON_AddStringToObject(msg2, "role", "user");
+    cJSON_AddStringToObject(msg2, "content", "Qual o seu nome?");
+    cJSON_AddItemToArray(messages, msg2);
+
+    char *msg_json = cJSON_PrintUnformatted(messages);
+
+    printf("%s\n",msg_json);
+
+    if (generate_text(host, model, msg_json) != 0) {
         printf("Erro na geração.\n");
         return 1;
     }

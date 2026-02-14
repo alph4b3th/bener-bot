@@ -24,4 +24,5 @@ CMakeFiles/meu_programa.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.h
+ /home/alph4b3th/Projects/C/bener-bot/src/ollama_client.h \
+ /usr/include/cjson/cJSON.h
