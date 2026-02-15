@@ -86,12 +86,16 @@ char *call_tool_from_json(const char *json_str)
         return NULL;
     }
 
-    const char *fname = fn_item->valuestring;
+ 
+    char fname_copy[128];
+    strncpy(fname_copy, fn_item->valuestring, sizeof(fname_copy) - 1);
+    fname_copy[sizeof(fname_copy) - 1] = '\0';
+
     char *tool_result = NULL;
 
     for (int i = 0; i < tool_count; i++)
     {
-        if (strcmp(tools[i].name, fname) == 0)
+        if (strcmp(tools[i].name, fname_copy) == 0)
         {
             tool_result = tools[i].fn(params);
             break;
@@ -108,7 +112,7 @@ char *call_tool_from_json(const char *json_str)
     /* ===================================================== */
 
     cJSON *json_result = cJSON_CreateObject();
-    cJSON_AddStringToObject(json_result, "function", fname);
+    cJSON_AddStringToObject(json_result, "function", fname_copy);
 
     cJSON *result_obj = cJSON_CreateObject();
 
