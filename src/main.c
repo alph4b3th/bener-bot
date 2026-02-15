@@ -1,211 +1,319 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 #include "ollama_client.h"
 #include <ollama/ollama.h>
 #include "json_utils.h"
 #include <cjson/cJSON.h>
 #include "memory_graph.h"
 #include "tools.h"
-#include <stdlib.h>
 
-void print_splash()
-{
-    printf("========================================\n");
-    printf("           BENDER-BOT-JARVIS            \n");
-    printf("========================================\n");
-    printf("Digite algo para conversar com o Jarvis.\n");
-    printf("Para sair, digite 'exit' e pressione Enter.\n\n");
-}
+#define MAX_TOOL_CALLS 10
 
-char *fn_weather_fake(void **args)
-{
-    const char *city = (const char *)args[0];
-    size_t len = snprintf(NULL, 0, "clima %s: Sol, 25°C", city) + 1;
-    char *result = malloc(len);
-    snprintf(result, len, "clima %s: Sol, 25°C", city);
-    return result;
-}
+Graph GLOBAL_GRAPH = {0};
+static int NEXT_NODE_ID = 1;
 
-/*
-gemma3:270m                                   e7d36fb2c3b3    291 MB    4 weeks ago
-smollm2:135m                                  9077fe9d2ae1    270 MB    6 weeks ago
-qwen3:14b                                     bdbd181c33f2    9.3 GB    6 months ago
-deepseek-r1:latest                            6995872bfe4c    5.2 GB    7 months ago
-llama3.1:latest                               46e0c10c039e    4.9 GB    7 months ago
-llama3.2:latest                               a80c4f17acd5    2.0 GB    7 months ago
-hermes3:3b                                    a8851c5041d4    2.0 GB    7 months ago
-hermes3:latest                                4f6b83f30b62    4.7 GB    7 months ago
-gemma3:latest                                 a2af6cc3eb7f    3.3 GB    7 months ago
-qwen3:30b-a3b                                 0b28110b7a33    18 GB     7 months ago
-qwen3:4b                                      2bfd38a7daaf    2.6 GB    7 months ago
-phi4-mini-reasoning:latest                    3ca8c2865ce9    3.2 GB    7 months ago
-smollm2:latest                                cef4a1e09247    1.8 GB    7 months ago
-gemma3n:e4b                                   15cb39fd9394    7.5 GB    7 months ago
-gemma3n:e2b                                   719372f8c7de    5.6 GB    7 months ago
-phi3:mini                                     4f2222927938    2.2 GB    7 months ago
-minicpm-v:latest                              c92bfad01205    5.5 GB    8 months ago
-llama3.1:8b-instruct-q4_K_M                   46e0c10c039e    4.9 GB    9 months ago
-qwen2.5:latest                                845dbda0ea48    4.7 GB    10 months ago
-deepseek-r1:8b                                28f8fd6cdc67    4.9 GB    10 months ago
-*/
-
-void register_weather_tool()
-{
-    const char *param_names[] = {"city"};
-    const char *param_types[] = {"string"};
-
-    register_tool(
-        "get_weather",
-        "Retorna a previsão do tempo para uma cidade (mock/fake).",
-        1,
-        param_names,
-        param_types,
-        fn_weather_fake);
-}
+/* ========================================================= */
+/* =================== UTILIDADES ========================== */
+/* ========================================================= */
 
 void load_env(const char *filename)
 {
-    FILE *file = fopen(filename, "r");
-    if (!file)
-        return;
+  FILE *file = fopen(filename, "r");
+  if (!file)
+    return;
 
-    char line[512];
-    while (fgets(line, sizeof(line), file))
-    {
-        char *key = strtok(line, "=");
-        char *value = strtok(NULL, "\n");
-        if (key && value)
-        {
-            setenv(key, value, 1);
-        }
-    }
-    fclose(file);
+  char line[512];
+  while (fgets(line, sizeof(line), file))
+  {
+    char *key = strtok(line, "=");
+    char *value = strtok(NULL, "\n");
+    if (key && value)
+      setenv(key, value, 1);
+  }
+  fclose(file);
 }
+
+void print_splash()
+{
+  printf("========================================\n");
+  printf("           BENDER-BOT-JARVIS            \n");
+  printf("========================================\n");
+  printf("Digite algo para conversar.\n");
+  printf("!exit para sair | !graph para ver grafo\n\n");
+}
+
+int get_int_param(cJSON *params, const char *key)
+{
+  cJSON *item = cJSON_GetObjectItem(params, key);
+  if (!item)
+    return 0;
+
+  if (cJSON_IsNumber(item))
+    return item->valueint;
+
+  if (cJSON_IsString(item))
+    return atoi(item->valuestring);
+
+  return 0;
+}
+
+float get_float_param(cJSON *params, const char *key)
+{
+  cJSON *item = cJSON_GetObjectItem(params, key);
+  if (!item)
+    return 0.0f;
+
+  if (cJSON_IsNumber(item))
+    return (float)item->valuedouble;
+
+  if (cJSON_IsString(item))
+    return atof(item->valuestring);
+
+  return 0.0f;
+}
+
+char *get_string_param(cJSON *params, const char *key)
+{
+  cJSON *item = cJSON_GetObjectItem(params, key);
+  if (!item)
+    return NULL;
+
+  if (cJSON_IsString(item))
+    return item->valuestring;
+
+  return NULL;
+}
+
+
+/* ========================================================= */
+/* ==================== TOOLS ============================== */
+/* ========================================================= */
+
+char *tool_create_node(cJSON *params)
+{
+  char *type = get_string_param(params, "type");
+  char *property = get_string_param(params, "property");
+
+  if (!type || !property)
+    return strdup("Erro: parâmetros inválidos para create_node.");
+
+  int id = NEXT_NODE_ID++;
+
+  Node *node = memory_create_node(id, type, property);
+  memory_add_node(&GLOBAL_GRAPH, node);
+
+  char buffer[256];
+  snprintf(buffer, sizeof(buffer),
+           "Node criado: id=%d, type=%s, property=%s",
+           id, type, property);
+
+  return strdup(buffer);
+}
+
+void register_create_node_tool()
+{
+  const char *param_names[] = {"type", "property"};
+  const char *param_types[] = {"string", "string"};
+
+  register_tool(
+      "create_node",
+      "Cria um nó na memória",
+      2,
+      param_names,
+      param_types,
+      tool_create_node);
+}
+
+/* --------------------------------------------------------- */
+
+char *tool_add_edge(cJSON *params)
+{
+  int from_id = get_int_param(params, "from_id");
+  int to_id = get_int_param(params, "to_id");
+  float confidence = get_float_param(params, "confidence");
+
+  if (from_id <= 0)
+    return strdup("Erro: from_id inválido.");
+
+  if (to_id <= 0)
+    return strdup("Erro: to_id inválido.");
+
+  Node *from = memory_find_node_from_id(&GLOBAL_GRAPH, from_id);
+  Node *to = memory_find_node_from_id(&GLOBAL_GRAPH, to_id);
+
+  if (!from)
+  {
+    char buffer[128];
+    snprintf(buffer, sizeof(buffer),
+             "Erro: nó from_id=%d não encontrado.", from_id);
+    return strdup(buffer);
+  }
+
+  if (!to)
+  {
+    char buffer[128];
+    snprintf(buffer, sizeof(buffer),
+             "Erro: nó to_id=%d não encontrado.", to_id);
+    return strdup(buffer);
+  }
+
+  memory_add_edge(from, to, confidence);
+
+  return strdup("Aresta criada com sucesso.");
+}
+
+void register_add_edge_tool()
+{
+  const char *param_names[] = {"from_id", "to_id", "confidence"};
+  const char *param_types[] = {"int", "int", "float"};
+
+  register_tool(
+      "add_edge",
+      "Cria relação entre dois nós",
+      3,
+      param_names,
+      param_types,
+      tool_add_edge);
+}
+
+
+/* ========================================================= */
+/* ================= AGENT LOOP ============================ */
+/* ========================================================= */
+
+char *run_agent_cycle(const char *host,
+                      const char *model,
+                      cJSON *short_memory)
+{
+  ollama_result_t result;
+  char *short_memory_json = NULL;
+  char *response = NULL;
+  int tool_calls = 0;
+
+  while (tool_calls < MAX_TOOL_CALLS)
+  {
+    free(short_memory_json);
+    short_memory_json = cJSON_PrintUnformatted(short_memory);
+
+    if (generate_text(host, model, short_memory_json, &result) != 0)
+      return NULL;
+
+    response = get_content_from_json(result.buf.base);
+    if (!response)
+      return NULL;
+
+    cJSON *parsed = cJSON_Parse(response);
+    if (!parsed)
+      return response;
+
+    cJSON *fn = cJSON_GetObjectItem(parsed, "function");
+    cJSON *params = cJSON_GetObjectItem(parsed, "parameters");
+
+    if (!fn || !params)
+    {
+      cJSON_Delete(parsed);
+      return response;
+    }
+
+    char *tool_output = call_tool_from_json(response);
+    cJSON_Delete(parsed);
+    free(response);
+
+    if (!tool_output)
+      return NULL;
+
+    printf("[TOOL RESULT] %s\n", tool_output);
+
+    cJSON *tool_msg = cJSON_CreateObject();
+    cJSON_AddStringToObject(tool_msg, "role", "tool");
+    cJSON_AddStringToObject(tool_msg, "content", tool_output);
+    cJSON_AddItemToArray(short_memory, tool_msg);
+
+    free(tool_output);
+    tool_calls++;
+  }
+
+  return strdup("Erro: limite de chamadas de ferramenta excedido.");
+}
+
+/* ========================================================= */
+/* ======================= MAIN ============================ */
+/* ========================================================= */
 
 int main()
 {
-    load_env(".env");
+  load_env(".env");
 
-    Graph graph;
-    graph.nodes = NULL;
-    graph.node_count = 0;
+  GLOBAL_GRAPH.nodes = NULL;
+  GLOBAL_GRAPH.node_count = 0;
 
-    Node *user_node = memory_create_node(1, "user", "Alice");
-    Node *preference_node = memory_create_node(2, "preference", "Gosta de café");
-    Node *topic_node = memory_create_node(3, "topic", "Física Quântica");
+  const char *host = getenv("OLLAMA_HOST");
+  const char *model = getenv("OLLAMA_MODEL");
 
-    memory_add_node(&graph, user_node);
-    memory_add_node(&graph, preference_node);
-    memory_add_node(&graph, topic_node);
+  if (!host || !model)
+  {
+    printf("Erro: configure OLLAMA_HOST e OLLAMA_MODEL\n");
+    return -1;
+  }
 
-    memory_add_edge(user_node, preference_node, 0.9f);
-    memory_add_edge(user_node, topic_node, 0.7f);
+  register_create_node_tool();
+  register_add_edge_tool();
 
-    memory_update_edge_confidence_by_id(user_node, 3, 0.2f);
+  cJSON *short_memory = cJSON_CreateArray();
 
-    Node *search_node = memory_find_node_from_id(&graph, 1);
-    if (search_node != NULL)
+  char *system_prompt_template = build_tools_system_prompt();
+
+  cJSON *system_prompt = cJSON_CreateObject();
+  cJSON_AddStringToObject(system_prompt, "role", "system");
+  cJSON_AddStringToObject(system_prompt, "content", system_prompt_template);
+  cJSON_AddItemToArray(short_memory, system_prompt);
+
+  print_splash();
+
+  char buffer[512];
+
+  while (1)
+  {
+    printf("input: ");
+    if (!fgets(buffer, sizeof(buffer), stdin))
+      continue;
+
+    buffer[strcspn(buffer, "\n")] = 0;
+
+    if (strcmp(buffer, "!exit") == 0)
+      break;
+
+    if (strcmp(buffer, "!graph") == 0)
     {
-        printf("Encontrado nó: ID=%d, Type=%s, Property=%s\n", search_node->id, search_node->type, search_node->property);
+      memory_show(&GLOBAL_GRAPH);
+      continue;
     }
 
-    memory_show(&graph);
+    cJSON *msg = cJSON_CreateObject();
+    cJSON_AddStringToObject(msg, "role", "user");
+    cJSON_AddStringToObject(msg, "content", buffer);
+    cJSON_AddItemToArray(short_memory, msg);
 
-    const char *host = getenv("OLLAMA_HOST");
-    const char *model = getenv("OLLAMA_MODEL");
+    char *response = run_agent_cycle(host, model, short_memory);
 
-    if (model == NULL || host == NULL)
+    if (!response)
     {
-        printf("arquivo .env inexistente ou mal configurado! CodeError>>>114\n");
-        return -1;
+      printf("Erro no agente.\n");
+      continue;
     }
 
-    int running = 1;
-    char buffer[300];
+    cJSON *assistant_msg = cJSON_CreateObject();
+    cJSON_AddStringToObject(assistant_msg, "role", "assistant");
+    cJSON_AddStringToObject(assistant_msg, "content", response);
+    cJSON_AddItemToArray(short_memory, assistant_msg);
 
-    register_weather_tool();
+    printf("Jarvis: %s\n", response);
+    free(response);
+  }
 
-    cJSON *short_memory = cJSON_CreateArray();
-
-    char *system_prompt_template = build_tools_system_prompt();
-    cJSON *system_prompt = cJSON_CreateObject();
-    cJSON_AddStringToObject(system_prompt, "role", "system");
-    cJSON_AddStringToObject(system_prompt, "content", system_prompt_template);
-    cJSON_AddItemToArray(short_memory, system_prompt);
-
-    printf("SYSTEM: %s", system_prompt_template);
-    // free(system_prompt);
-
-    ollama_result_t result;
-    print_splash();
-    while (running)
-    {
-        printf("input:");
-        if (fgets(buffer, sizeof(buffer), stdin) == NULL)
-        {
-            continue;
-        }
-
-        buffer[strcspn(buffer, "\n")] = 0;
-
-        if (strcmp(buffer, "!exit") == 0)
-        {
-            break;
-        }
-
-        cJSON *input_message = cJSON_CreateObject();
-        cJSON_AddStringToObject(input_message, "role", "user");
-        cJSON_AddStringToObject(input_message, "content", buffer);
-        cJSON_AddItemToArray(short_memory, input_message);
-
-        char *short_memory_json = cJSON_PrintUnformatted(short_memory);
-
-        if (generate_text(host, model, short_memory_json, &result) != 0)
-        {
-            printf("Erro na geração. \n");
-            return 1;
-        }
-
-        char *response = get_content_from_json(result.buf.base);
-
-        cJSON *parsed = cJSON_Parse(response);
-        if (parsed) // só executa se for JSON válido
-        {
-            cJSON_Delete(parsed);
-            char *tool_output = call_tool_from_json(response);
-            printf("\033[33m[TOOL RESULT] %s\033[0m\n", tool_output);
-
-            cJSON *tool_result = cJSON_CreateObject();
-            cJSON_AddStringToObject(tool_result, "role", "tool");
-            cJSON_AddStringToObject(tool_result, "content", tool_output);
-            cJSON_AddItemToArray(short_memory, tool_result);
-
-            free(short_memory_json);
-            short_memory_json = cJSON_PrintUnformatted(short_memory);
-
-            if (generate_text(host, model, short_memory_json, &result) != 0)
-            {
-                printf("Erro na geração. \n");
-                return -1;
-            }
-
-            free(response);
-            response = get_content_from_json(result.buf.base);
-
-            free(tool_output);
-        }
-
-        cJSON *response_message = cJSON_CreateObject();
-        cJSON_AddStringToObject(response_message, "role", "system");
-        cJSON_AddStringToObject(response_message, "content", response);
-        cJSON_AddItemToArray(short_memory, response_message);
-
-        printf("Jarvis: %s\n", response);
-    }
-
-    char *short_memory_json = cJSON_PrintUnformatted(short_memory);
-    printf("Short Memory: [%s]\n", short_memory_json);
-
-    cJSON_Delete(short_memory);
-
-    return 0;
+  cJSON_Delete(short_memory);
+  return 0;
 }

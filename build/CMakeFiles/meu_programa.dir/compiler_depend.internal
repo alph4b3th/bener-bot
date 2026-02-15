@@ -77,6 +77,7 @@ CMakeFiles/meu_programa.dir/src/main.c.o
  /usr/include/asm-generic/socket.h
  /usr/include/asm-generic/sockios.h
  /usr/include/cjson/cJSON.h
+ /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/features-time64.h
  /usr/include/features.h

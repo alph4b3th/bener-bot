@@ -13,7 +13,7 @@ add_executable(meu_programa
     src/tools.c
 )
 
-
+ 
 target_include_directories(meu_programa PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/libollama/lib/public
 )

@@ -75,6 +75,7 @@ CMakeFiles/meu_programa.dir/src/main.c.o: /home/alph4b3th/Projects/C/bener-bot/s
   /usr/include/asm-generic/socket.h \
   /usr/include/asm-generic/sockios.h \
   /usr/include/cjson/cJSON.h \
+  /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
@@ -563,6 +564,8 @@ CMakeFiles/meu_programa.dir/src/tools.c.o: /home/alph4b3th/Projects/C/bener-bot/
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
